@@ -1,21 +1,5 @@
 version: 10
 applications:
-  - appRoot: marketing-site
-    frontend:
-      phases:
-        preBuild:
-          commands:
-            - npm ci
-        build:
-          commands:
-            - npm run build
-      artifacts:
-        baseDirectory: public
-        files:
-          - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
   - appRoot: reactapp
     frontend:
       phases:
@@ -31,7 +15,23 @@ applications:
           - '**/*'
       cache:
         paths:
-          - node_modules/**/*          
+          - node_modules/**/*       
+  - appRoot: marketing-site
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: public
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*   
   - appRoot: aws-amplify-gatsby-auth
     backend:
       phases:
