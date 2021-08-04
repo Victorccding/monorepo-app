@@ -1,6 +1,6 @@
 version: 122
 applications:
-  - appRoot: reactapps
+  - appRoot: reactapp
     frontend:
       phases:
         preBuild:
