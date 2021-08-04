@@ -1,6 +1,6 @@
 version: 2
 applications:
-  - appRoot: reactapp
+  - appRoot: reactapps
     frontend:
       phases:
         preBuild:
