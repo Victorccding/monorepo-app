@@ -1,4 +1,4 @@
-version: 122
+version: 1
 applications:
   - appRoot: reactapp
     frontend:
