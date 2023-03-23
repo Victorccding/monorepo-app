@@ -2,6 +2,7 @@ version: 1
 applications:
   - appRoot: reactapp
     frontend:
+      buildPath: reactapp
       phases:
         preBuild:
           commands:
